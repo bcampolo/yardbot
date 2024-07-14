@@ -1,3 +1,5 @@
 setuptools
 wheel
-
+RPi.GPIO
+types-RPi.GPIO
+json

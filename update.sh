@@ -1,6 +1,10 @@
 #!/bin/bash
+
 YARDBOT_DIR=/opt/yardbot
 YARDBOT_DIST=$(find "${YARDBOT_DIR}/update" -name "yardbot-*.tar.gz" -print -quit)
+
+echo "Stopping any running instances..."
+pkill yardbot
 
 echo "Checking for updates..."
 if [ -f "${YARDBOT_DIST}" ]; then
